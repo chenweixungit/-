@@ -1,5 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## 项目简介
+该项目是个人使用react模仿网易云音乐web端开发的一个小型项目
+主题图片采用精灵图
+部分组件借鉴了antd组件库里的组件，轮播图，播放工具栏里的滑动条
+CSS样式采用style-component进行封装
+Axios从服务器请求数据，并且对axios进行二次封装
+单页应用，使用hashrouter来控制页面组件渲染
+Redux管理从服务器请求的数据，当前歌曲信息，歌曲列表
+Redux-thunk中间件从服务器请求数据并放到reducer
+使用immutable-js中提供的combine-reducer对reducer进行合并
+Reducer存储的数据也使用immutable提供的map对象进行处理
+组件采用函数组件+hooks来实现，
+优化：函数组件均使用memo函数进行包裹，子组件中依赖的函数均使用useCallback优化，
+
 ## Available Scripts
 
 In the project directory, you can run:
